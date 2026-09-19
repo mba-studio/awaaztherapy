@@ -1,7 +1,7 @@
 AWAAZ THERAPY CENTRE WEBSITE
 
 Files:
-- index.html    Main website
+- index(1).html    Main website
 - styles.css   Responsive visual design
 - script.js    Mobile navigation, scroll reveals, FAQ behavior, assessment email form
 - assets/      Logo and Fatima Shah photo supplied by the client
