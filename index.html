@@ -1,332 +1,497 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Awaaz Therapy Centre in Johar Town, Lahore provides personalized speech and language therapy for children, teens and adults." />
-  <meta name="theme-color" content="#082b63" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Awaaz Therapy Centre in Johar Town, Lahore provides speech and language assessment, therapy and parent guidance for children.">
+  <meta name="theme-color" content="#0a356d">
+  <meta name="robots" content="index,follow">
   <title>Awaaz Therapy Centre | Speech & Language Therapy in Lahore</title>
-  <link rel="icon" type="image/png" href="assets/awaaz-logo.png" />
+
+  <link rel="icon" href="assets/awaaz-logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MedicalBusiness",
     "name": "Awaaz Therapy Centre",
-    "description": "Speech and language therapy for children, teens and adults.",
+    "description": "Speech and language assessment, therapy and parent guidance for children.",
     "telephone": "+923251979659",
     "email": "awaaztherapycentre@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "200 C, BOR Housing Society",
+      "streetAddress": "Johar Child & Polyclinic, 200 C, BOR Housing Society",
       "addressLocality": "Johar Town, Lahore",
       "addressCountry": "PK"
     },
-    "openingHours": "Mo-Su 09:00-22:00",
+    "openingHours": "Mo-Sa 09:00-22:00",
     "sameAs": [
-      "https://www.instagram.com/awaaztherapycentre?stkn=MW1tNXZ6bmtjbnNpNA==",
+      "https://www.instagram.com/awaaztherapycentre/",
       "https://www.facebook.com/profile.php?id=61594171565545"
     ]
   }
   </script>
+
+  <style>
+    :root{
+      --navy:#0a356d;
+      --navy-deep:#061f45;
+      --navy-soft:#eaf2fb;
+      --pink:#f47f91;
+      --pink-deep:#e85f75;
+      --pink-soft:#fff0f3;
+      --ink:#10223d;
+      --muted:#64748b;
+      --line:#dfe7f0;
+      --cream:#fffdfb;
+      --white:#fff;
+      --shadow:0 24px 70px rgba(7,38,78,.12);
+      --shadow-soft:0 16px 40px rgba(7,38,78,.08);
+      --radius:28px;
+      --shell:1180px;
+    }
+
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:var(--cream);font-family:"Manrope",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%}
+    a{color:inherit}
+    button,input,textarea,select{font:inherit}
+    ::selection{background:#ffd8df;color:var(--navy-deep)}
+
+    .shell{width:min(calc(100% - 40px),var(--shell));margin-inline:auto}
+    .skip-link{position:fixed;left:16px;top:-100px;z-index:9999;padding:11px 16px;background:var(--navy);color:#fff;border-radius:12px;text-decoration:none;font-weight:800}
+    .skip-link:focus{top:16px}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+    .icon{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+    .icon-fill{fill:currentColor;stroke:none}
+
+    .topbar{background:var(--navy-deep);color:#dce8f7;font-size:.76rem}
+    .topbar-inner{min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .topbar-left,.topbar-right{display:flex;align-items:center;gap:18px}
+    .topbar a,.topbar span{display:inline-flex;align-items:center;gap:7px;text-decoration:none}
+    .topbar a:hover{color:#fff}
+    .open-dot{width:8px;height:8px;border-radius:50%;background:#7ee2b8;box-shadow:0 0 0 5px rgba(126,226,184,.12)}
+
+    .site-header{position:sticky;top:0;z-index:1000;background:rgba(255,253,251,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(10,53,109,.07)}
+    .nav-row{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:32px}
+    .brand{display:flex;align-items:center;text-decoration:none;min-width:190px}
+    .brand img{width:218px;height:auto}
+    .nav{display:flex;align-items:center;gap:8px}
+    .nav>a{padding:10px 12px;border-radius:12px;text-decoration:none;color:#38506d;font-size:.82rem;font-weight:700}
+    .nav>a:hover{background:#f2f7fc;color:var(--navy)}
+    .nav .book-link{background:var(--navy);color:#fff;padding:12px 17px;display:inline-flex;align-items:center;gap:8px;box-shadow:0 10px 24px rgba(10,53,109,.17)}
+    .nav .book-link:hover{background:var(--navy-deep);color:#fff}
+    .menu-toggle{display:none;border:0;background:#eef5fb;color:var(--navy);width:46px;height:46px;border-radius:14px;align-items:center;justify-content:center;cursor:pointer}
+
+    .hero{position:relative;overflow:hidden;padding:84px 0 70px;background:
+      radial-gradient(circle at 10% 15%,rgba(244,127,145,.13),transparent 27%),
+      radial-gradient(circle at 90% 0%,rgba(10,53,109,.11),transparent 29%),
+      linear-gradient(180deg,#fffdfb 0%,#f8fbff 100%)}
+    .hero::after{content:"";position:absolute;right:-120px;bottom:-150px;width:380px;height:380px;border-radius:50%;border:56px solid rgba(244,127,145,.075)}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:76px}
+    .kicker,.eyebrow{margin:0 0 14px;display:inline-flex;align-items:center;gap:9px;color:var(--pink-deep);font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em}
+    .kicker::before,.eyebrow::before{content:"";width:26px;height:2px;border-radius:999px;background:currentColor}
+    .hero h1,.section-title,.approach h2,.booking-panel h2,.faq-title{font-family:"DM Serif Display",Georgia,serif;font-weight:400;letter-spacing:-.035em;color:var(--navy-deep)}
+    .hero h1{font-size:clamp(4.1rem,7vw,7.2rem);line-height:.88;margin:0;max-width:700px}
+    .hero h1 em{color:var(--pink-deep);font-weight:400}
+    .hero-copy{max-width:650px;font-size:1.08rem;color:#52667f;margin:28px 0 0}
+    .hero-subline{display:block;margin-top:8px;color:var(--navy);font-size:.9rem;font-weight:800;letter-spacing:.03em}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:14px 20px;text-decoration:none;font-size:.83rem;font-weight:800;border:1px solid transparent;transition:.22s ease}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--navy);color:#fff;box-shadow:0 14px 32px rgba(10,53,109,.18)}
+    .btn-primary:hover{background:var(--navy-deep)}
+    .btn-secondary{background:#fff;color:var(--navy);border-color:#ccd9e8;box-shadow:0 10px 24px rgba(7,38,78,.06)}
+    .btn-secondary:hover{border-color:#a9bfd7;background:#fafdff}
+    .hero-note{display:flex;align-items:center;gap:12px;margin-top:28px;color:#6b7e95;font-size:.76rem;font-weight:700}
+    .hero-note strong{color:var(--navy)}
+    .hero-note-icon{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--pink-soft);color:var(--pink-deep)}
+
+    .hero-media{position:relative}
+    .media-card{position:relative;background:#fff;border:1px solid rgba(10,53,109,.09);border-radius:34px;padding:12px;box-shadow:var(--shadow);transform:rotate(1deg)}
+    .media-card img{width:100%;aspect-ratio:1/1.05;object-fit:cover;border-radius:25px}
+    .media-badge{position:absolute;left:-26px;bottom:54px;display:flex;align-items:center;gap:11px;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border:1px solid rgba(10,53,109,.09);border-radius:18px;padding:12px 15px;box-shadow:0 15px 35px rgba(7,38,78,.14)}
+    .media-badge svg{width:36px;height:36px;padding:8px;border-radius:12px;background:var(--pink-soft);color:var(--pink-deep)}
+    .media-badge strong,.media-badge span{display:block}.media-badge strong{font-size:.73rem;color:var(--navy)}.media-badge span{font-size:.62rem;color:#73849a}
+
+    .quick-strip{position:relative;z-index:2;margin-top:-20px}
+    .quick-strip-inner{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border:1px solid rgba(10,53,109,.09);box-shadow:var(--shadow-soft);border-radius:24px;overflow:hidden}
+    .quick-item{padding:21px 24px;display:flex;align-items:center;gap:13px;text-decoration:none}
+    .quick-item+ .quick-item{border-left:1px solid #e8eef5}
+    .quick-item .qicon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:#f1f6fb;color:var(--navy)}
+    .quick-item:nth-child(2) .qicon{background:var(--pink-soft);color:var(--pink-deep)}
+    .quick-item small,.quick-item strong{display:block}.quick-item small{font-size:.61rem;color:#8392a5;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.quick-item strong{font-size:.76rem;color:var(--navy-deep);margin-top:2px}
+
+    .section{padding:100px 0}
+    .section-head{display:grid;grid-template-columns:1fr .78fr;gap:80px;align-items:end;margin-bottom:44px}
+    .section-title{font-size:clamp(2.8rem,5vw,4.7rem);line-height:.98;margin:0;max-width:800px}
+    .section-intro{margin:0;color:#667b94;font-size:.91rem;max-width:560px}
+
+    .services{background:#fff}
+    .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .service-card{position:relative;min-height:255px;padding:26px 24px 22px;border:1px solid #e5ebf2;border-radius:22px;background:linear-gradient(180deg,#fff,#fbfdff);overflow:hidden;transition:.24s ease}
+    .service-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px rgba(7,38,78,.08);border-color:#cfdae6}
+    .service-card::after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;right:-42px;top:-42px;background:var(--pink-soft)}
+    .service-icon{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:#edf5fd;color:var(--navy);position:relative;z-index:1}
+    .service-card:nth-child(even) .service-icon{background:var(--pink-soft);color:var(--pink-deep)}
+    .service-icon .icon{width:24px;height:24px}
+    .service-no{display:block;margin-top:24px;color:#9eacbd;font-size:.62rem;font-weight:800;letter-spacing:.12em}
+    .service-card h3{margin:7px 0 8px;font-size:1.02rem;line-height:1.3;color:var(--navy-deep)}
+    .service-card p{margin:0;color:#708197;font-size:.75rem;line-height:1.7}
+
+    .approach{background:linear-gradient(135deg,var(--navy-deep),var(--navy));color:#fff;position:relative;overflow:hidden}
+    .approach::before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;left:-160px;top:-190px;border:68px solid rgba(255,255,255,.035)}
+    .approach-grid{position:relative;z-index:1;display:grid;grid-template-columns:.82fr 1.18fr;gap:76px;align-items:center}
+    .approach-quote{border-radius:30px;background:linear-gradient(155deg,rgba(255,255,255,.12),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.13);padding:42px;min-height:385px;display:flex;flex-direction:column;justify-content:space-between}
+    .quote-mark{font-family:Georgia,serif;font-size:6rem;color:#f6a5b1;line-height:.7}
+    .approach-quote blockquote{font-family:"DM Serif Display",Georgia,serif;font-size:2.25rem;line-height:1.1;margin:0;color:#fff}
+    .approach-quote small{color:#9eb5cf;text-transform:uppercase;letter-spacing:.16em;font-size:.64rem;font-weight:800}
+    .approach .eyebrow{color:#ffc0c9}.approach h2{font-size:clamp(3rem,5vw,4.7rem);line-height:.98;color:#fff;margin:0 0 20px}
+    .approach-copy{color:#b9c9da;font-size:.9rem;margin:0 0 28px}
+    .steps{display:grid;gap:13px}
+    .step{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:start;padding:16px 0;border-top:1px solid rgba(255,255,255,.1)}
+    .step:last-child{border-bottom:1px solid rgba(255,255,255,.1)}
+    .step-num{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:rgba(255,255,255,.1);color:#ffc0c9;font-size:.7rem;font-weight:800}
+    .step h3{margin:0;color:#fff;font-size:.92rem}.step p{margin:4px 0 0;color:#9eb3c9;font-size:.73rem}
+
+    .team{background:#f7faff}
+    .team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+    .team-card{background:#fff;border:1px solid #e2eaf3;border-radius:28px;overflow:hidden;box-shadow:0 12px 30px rgba(7,38,78,.055);display:grid;grid-template-columns:minmax(190px,.82fr) 1.18fr;min-height:480px}
+    .team-photo-wrap{position:relative;min-height:100%;background:#edf2f7;overflow:hidden}
+    .team-photo{width:100%;height:100%;min-height:480px;object-fit:cover;object-position:center top}
+    .team-role-badge{position:absolute;left:16px;bottom:16px;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-radius:999px;padding:8px 11px;font-size:.6rem;font-weight:800;color:var(--navy);box-shadow:0 8px 20px rgba(7,38,78,.12)}
+    .team-body{padding:34px 30px;display:flex;flex-direction:column;justify-content:center}
+    .team-kicker{font-size:.64rem;color:var(--pink-deep);font-weight:800;text-transform:uppercase;letter-spacing:.12em}
+    .team-body h3{font-family:"DM Serif Display",Georgia,serif;font-size:2.3rem;line-height:1;margin:8px 0 10px;color:var(--navy-deep);font-weight:400}
+    .team-body p{margin:0;color:#708197;font-size:.78rem}
+    .expertise{margin-top:24px;padding-top:20px;border-top:1px solid #e7edf4}
+    .expertise-label{display:block;margin-bottom:10px;color:#8391a3;font-size:.6rem;font-weight:800;text-transform:uppercase;letter-spacing:.14em}
+    .expertise-tags{display:flex;flex-wrap:wrap;gap:7px}
+    .expertise-tags span{padding:7px 9px;border-radius:999px;background:#f0f6fb;color:#315579;font-size:.61rem;font-weight:700}
+    .team-card:nth-child(2) .expertise-tags span{background:var(--pink-soft);color:#a94e60}
+
+    .faq{background:#fff}
+    .faq-grid{display:grid;grid-template-columns:.65fr 1.35fr;gap:72px;align-items:start}
+    .faq-side{position:sticky;top:135px}
+    .faq-title{font-size:clamp(2.8rem,4.7vw,4.3rem);line-height:.98;margin:0 0 18px}
+    .faq-side p{color:#6d7f94;font-size:.83rem;margin:0 0 22px}
+    .faq-list{border-top:1px solid var(--line)}
+    details{border-bottom:1px solid var(--line)}
+    summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;color:var(--navy-deep);font-weight:800;font-size:.84rem}
+    summary::-webkit-details-marker{display:none}
+    summary::before,summary::after{content:"";position:absolute;right:8px;top:50%;width:14px;height:2px;background:var(--pink-deep);border-radius:999px;transition:.2s}
+    summary::after{transform:rotate(90deg)}
+    details[open] summary::after{transform:rotate(0)}
+    details p{margin:-7px 0 23px;color:#6b7d92;font-size:.78rem;max-width:760px}
+
+    .booking{padding:100px 0;background:linear-gradient(180deg,#f7faff 0%,#fff5f7 100%)}
+    .booking-panel{position:relative;overflow:hidden;display:grid;grid-template-columns:1.05fr .95fr;gap:58px;background:#fff;border:1px solid #dfe8f2;border-radius:34px;padding:54px;box-shadow:var(--shadow)}
+    .booking-panel::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-150px;top:-150px;background:rgba(244,127,145,.1)}
+    .booking-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 11px;border-radius:999px;background:var(--pink-soft);color:var(--pink-deep);font-size:.62rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800}
+    .booking-panel h2{font-size:clamp(3rem,5vw,4.8rem);line-height:.95;margin:17px 0 18px;max-width:620px}
+    .booking-panel p{color:#687b92;max-width:590px;font-size:.88rem}
+    .booking-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}
+    .instagram-btn{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);color:#fff;box-shadow:0 14px 32px rgba(199,59,106,.2)}
+    .contact-list{position:relative;z-index:1;display:grid;gap:10px;align-content:center}
+    .contact-card{display:grid;grid-template-columns:48px 1fr;gap:13px;align-items:center;padding:15px;border:1px solid #e1e9f2;border-radius:17px;text-decoration:none;background:#fff;transition:.2s}
+    .contact-card:hover{transform:translateX(3px);border-color:#c9d6e4}
+    .contact-card .contact-icon{width:44px;height:44px;border-radius:13px;display:grid;place-items:center;background:#eef5fb;color:var(--navy)}
+    .contact-card:nth-child(even) .contact-icon{background:var(--pink-soft);color:var(--pink-deep)}
+    .contact-card small,.contact-card strong{display:block}.contact-card small{color:#8a99aa;font-size:.59rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.contact-card strong{margin-top:2px;color:var(--navy-deep);font-size:.72rem;overflow-wrap:anywhere}
+
+    .footer{background:#04162f;color:#b2c1d3;padding:58px 0 20px}
+    .footer-grid{display:grid;grid-template-columns:1.3fr .7fr .8fr 1.15fr;gap:42px;padding-bottom:38px}
+    .footer-logo{width:220px;filter:brightness(0) invert(1);opacity:.96}
+    .footer-brand p{margin:14px 0 0;font-size:.75rem;color:#8297b0}
+    .footer h4{margin:3px 0 12px;color:#fff;font-size:.66rem;text-transform:uppercase;letter-spacing:.14em}
+    .footer-links{display:flex;flex-direction:column;gap:8px}.footer a{color:#a9bacd;text-decoration:none;font-size:.72rem}.footer a:hover{color:#fff}.footer address{font-style:normal;color:#8ea1b8;font-size:.72rem;line-height:1.75}
+    .social-links{display:flex;gap:8px;margin-top:14px}.social-link{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:rgba(255,255,255,.07);color:#fff!important}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:19px;display:flex;justify-content:space-between;gap:18px;font-size:.61rem;color:#7086a0}
+
+    .floating-actions{position:fixed;right:16px;bottom:16px;z-index:900;display:flex;gap:6px;padding:6px;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border:1px solid #dfe8f2;border-radius:999px;box-shadow:0 14px 34px rgba(7,38,78,.14)}
+    .floating-actions a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;text-decoration:none;background:#f3f7fb;color:var(--navy)}
+    .floating-actions .wa{background:#22c55e;color:#fff}.floating-actions .ig{background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);color:#fff}
+
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+    .reveal.visible{opacity:1;transform:none}
+    .delay-1{transition-delay:.08s}.delay-2{transition-delay:.15s}
+    :focus-visible{outline:3px solid rgba(244,127,145,.5);outline-offset:3px}
+
+    @media(max-width:1060px){
+      .hero-grid{gap:44px}.services-grid{grid-template-columns:repeat(2,1fr)}.team-card{grid-template-columns:1fr}.team-photo{min-height:410px;aspect-ratio:4/5}.team-grid{gap:18px}.footer-grid{grid-template-columns:1.2fr .7fr .8fr}.footer-location{grid-column:1/-1}
+    }
+    @media(max-width:900px){
+      .topbar-left{display:none}.topbar-inner{justify-content:center}.menu-toggle{display:flex}.nav{display:none;position:absolute;left:20px;right:20px;top:calc(100% + 8px);background:#fff;border:1px solid #dfe8f2;border-radius:18px;box-shadow:var(--shadow-soft);padding:10px;flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav>a{text-align:center}.hero{padding-top:60px}.hero-grid{grid-template-columns:1fr}.hero-content{text-align:center}.hero h1,.hero-copy{margin-inline:auto}.hero-actions,.hero-note{justify-content:center}.hero-media{max-width:600px;margin:10px auto 0}.quick-strip{margin-top:20px}.quick-strip-inner{grid-template-columns:1fr}.quick-item+.quick-item{border-left:0;border-top:1px solid #e8eef5}.section-head{grid-template-columns:1fr;gap:18px}.approach-grid,.faq-grid,.booking-panel{grid-template-columns:1fr}.faq-side{position:static}.team-card{grid-template-columns:minmax(180px,.85fr) 1.15fr}.team-photo{height:100%;min-height:460px;aspect-ratio:auto}.booking-panel{padding:40px}.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}
+    }
+    @media(max-width:650px){
+      .shell{width:min(calc(100% - 28px),var(--shell))}.topbar-right .hours{display:none}.nav-row{min-height:74px}.brand img{width:185px}.hero{padding:48px 0 50px}.hero h1{font-size:clamp(3.25rem,17vw,4.8rem)}.hero-actions{flex-direction:column}.hero-actions .btn{width:100%}.hero-note{align-items:flex-start;text-align:left}.media-card{border-radius:26px}.media-card img{border-radius:20px}.media-badge{left:8px;bottom:18px}.section{padding:78px 0}.section-title,.approach h2,.faq-title,.booking-panel h2{font-size:clamp(2.7rem,13vw,4rem)}.services-grid{grid-template-columns:1fr}.service-card{min-height:225px}.approach-quote{min-height:330px;padding:30px}.approach-quote blockquote{font-size:1.85rem}.team-grid{grid-template-columns:1fr}.team-card{display:block}.team-photo{width:100%;height:auto;min-height:0;aspect-ratio:4/5;object-fit:cover}.team-body{padding:28px}.booking-panel{padding:26px;border-radius:25px}.booking-actions{flex-direction:column}.booking-actions .btn{width:100%}.footer-grid{grid-template-columns:1fr 1fr}.footer-location{grid-column:1/-1}.footer-bottom{flex-direction:column;gap:4px}.floating-actions{right:10px;bottom:10px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <!-- Reusable vector icons: no emoji/icon font dependency -->
+  <svg class="sr-only" aria-hidden="true" focusable="false">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.7" r=".8" class="icon-fill"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.55 7.47L3 20.5l1.32-4.83A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="M8.2 7.7c.2-.45.4-.46.7-.47h.6c.2 0 .4.08.5.42l.75 1.82c.1.25.05.46-.08.65l-.62.8c-.15.18-.15.36-.03.56.53.9 1.2 1.66 2 2.27.75.57 1.4.86 1.62.96.2.09.43.07.56-.1l.83-1.04c.17-.2.36-.25.6-.16l1.85.88c.26.12.43.2.48.33.05.13.05.76-.18 1.48-.23.72-1.34 1.38-1.87 1.46-.48.07-1.08.1-1.74-.1-.4-.12-.92-.3-1.58-.58a12.4 12.4 0 0 1-4.34-3.84c-.33-.45-2-2.65-2-5.05 0-1.18.6-1.77.8-2.02Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z"/><path d="M8 9h8M8 12h5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  </svg>
 
-  <header class="site-header" id="top">
-    <div class="announcement">
-      <div class="shell announcement-inner">
-        <div class="announcement-item"><span class="pulse-dot"></span> Accepting assessment bookings</div>
-        <div class="announcement-links">
-          <a href="tel:+923251979659">+92 325 1979659</a>
-          <span class="sep"></span>
-          <span>Open 9:00 AM – 10:00 PM</span>
-        </div>
+  <div class="topbar">
+    <div class="shell topbar-inner">
+      <div class="topbar-left"><span><i class="open-dot"></i> Accepting assessment bookings</span></div>
+      <div class="topbar-right">
+        <a href="https://maps.app.goo.gl/JqrwriS2hGfwh4VQ9?g_st=ipc" target="_blank" rel="noopener"><svg class="icon"><use href="#i-map"/></svg> Johar Town, Lahore</a>
+        <span class="hours"><svg class="icon"><use href="#i-clock"/></svg> Mon–Sat · 9:00 AM–10:00 PM</span>
       </div>
     </div>
+  </div>
 
+  <header class="site-header" id="top">
     <div class="shell nav-row">
-      <a class="brand" href="#top" aria-label="Awaaz Therapy Centre home">
-        <img src="assets/awaaz-logo.png" alt="Awaaz Therapy Centre" />
-      </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#services">Services</a>
+      <a class="brand" href="#top" aria-label="Awaaz Therapy Centre home"><img src="assets/awaaz-logo.png" alt="Awaaz Therapy Centre"></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><svg class="icon"><use href="#i-menu"/></svg></button>
+      <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#services">How we can help</a>
         <a href="#approach">Our approach</a>
         <a href="#team">Team</a>
         <a href="#faq">FAQs</a>
-        <a class="nav-button" href="#booking">Book assessment <span>↗</span></a>
+        <a class="book-link" href="https://www.instagram.com/awaaztherapycentre/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-instagram"/></svg> Book an Assessment</a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div class="hero-orb orb-a" aria-hidden="true"></div>
-      <div class="hero-orb orb-b" aria-hidden="true"></div>
-      <div class="hero-grid-overlay" aria-hidden="true"></div>
-
       <div class="shell hero-grid">
         <div class="hero-content reveal">
-          <div class="hero-kicker"><span class="kicker-icon">✦</span> Speech &amp; language therapy in Lahore</div>
+          <p class="kicker">Speech &amp; language therapy in Lahore</p>
           <h1>Your speech journey <em>starts here.</em></h1>
-          <p class="hero-copy">Personalized, evidence-informed communication support for children, teens and adults—delivered in a calm, encouraging environment where progress feels possible.</p>
-
+          <p class="hero-copy">Speech &amp; language therapy for children.<span class="hero-subline">Assessment • Therapy • Parent Guidance</span></p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#booking">Book an assessment <span>→</span></a>
-            <a class="btn btn-glass" href="https://maps.app.goo.gl/JqrwriS2hGfwh4VQ9?g_st=ipc" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn btn-primary" href="https://www.instagram.com/awaaztherapycentre/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-instagram"/></svg> Book an Assessment</a>
+            <a class="btn btn-secondary" href="https://wa.me/923251979659" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg> WhatsApp Us</a>
           </div>
-
-          <div class="trust-row">
-            <div class="avatar-stack" aria-hidden="true"><span>18m+</span><span>12y</span><span>A+</span></div>
-            <div class="trust-copy"><strong>Specialized support across ages</strong><span>Children 18 months–12 years · Teens · Adults</span></div>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal delay-1">
-          <div class="portrait-shell">
-            <div class="portrait-glow" aria-hidden="true"></div>
-            <div class="portrait-card">
-              <div class="portrait-topbar">
-                <div class="portrait-logo-mark"><img src="assets/awaaz-logo.png" alt="" /></div>
-                <span>Care that listens first</span>
-              </div>
-              <div class="portrait-image">
-                <img src="assets/fatima-shah.jpeg" alt="Fatima Shah, Certified Speech and Language Pathologist at Awaaz Therapy Centre" />
-              </div>
-              <div class="portrait-caption">
-                <div><strong>Fatima Shah</strong><span>Certified Speech &amp; Language Pathologist</span></div>
-                <span class="status-pill"><i></i> Awaaz Team</span>
-              </div>
-            </div>
-
-            <div class="float-card float-card-one">
-              <span class="float-icon blue">◌</span>
-              <div><strong>Personalized plans</strong><span>Built around real-life goals</span></div>
-            </div>
-            <div class="float-card float-card-two">
-              <span class="float-icon pink">⌁</span>
-              <div><strong>Parent guidance</strong><span>Practical home strategies</span></div>
-            </div>
-            <div class="sound-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="hero-note">
+            <span class="hero-note-icon"><svg class="icon"><use href="#i-message"/></svg></span>
+            <span><strong>Individualized support</strong><br>Practical goals for communication at home, school and everyday life.</span>
           </div>
         </div>
-      </div>
 
-      <div class="shell hero-metrics reveal delay-2">
-        <div class="metric-card"><span class="metric-icon">01</span><div><strong>18 months–12 years</strong><span>Specialized pediatric therapy</span></div></div>
-        <div class="metric-card"><span class="metric-icon">02</span><div><strong>Teens &amp; adults</strong><span>Ongoing communication support</span></div></div>
-        <div class="metric-card"><span class="metric-icon">03</span><div><strong>9 AM–10 PM</strong><span>Flexible working hours</span></div></div>
-        <div class="metric-card"><span class="metric-icon">04</span><div><strong>Johar Town</strong><span>200 C, BOR Housing Society</span></div></div>
+        <div class="hero-media reveal delay-1">
+          <div class="media-card">
+            <img src="assets/homepage.jpg" alt="Speech and language therapy session at Awaaz Therapy Centre">
+            <div class="media-badge">
+              <svg class="icon"><use href="#i-message"/></svg>
+              <div><strong>Care that listens first</strong><span>Assessment-led therapy and family guidance</span></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section services-section" id="services">
+    <div class="quick-strip">
+      <div class="shell quick-strip-inner">
+        <a class="quick-item" href="tel:+923251979659"><span class="qicon"><svg class="icon"><use href="#i-phone"/></svg></span><span><small>Call us</small><strong>+92 325 1979659</strong></span></a>
+        <a class="quick-item" href="mailto:awaaztherapycentre@gmail.com"><span class="qicon"><svg class="icon"><use href="#i-mail"/></svg></span><span><small>Email</small><strong>awaaztherapycentre@gmail.com</strong></span></a>
+        <a class="quick-item" href="https://maps.app.goo.gl/JqrwriS2hGfwh4VQ9?g_st=ipc" target="_blank" rel="noopener"><span class="qicon"><svg class="icon"><use href="#i-map"/></svg></span><span><small>Visit</small><strong>Johar Town, Lahore</strong></span></a>
+      </div>
+    </div>
+
+    <section class="section services" id="services">
       <div class="shell">
         <div class="section-head reveal">
-          <div>
-            <p class="eyebrow">Specialized support</p>
-            <h2>Therapy for clearer, more confident communication.</h2>
-          </div>
-          <p class="section-intro">Every plan starts with an assessment and is tailored around age, communication profile, daily needs and meaningful goals.</p>
+          <div><p class="eyebrow">How we can help</p><h2 class="section-title">Support for clearer, more confident communication.</h2></div>
+          <p class="section-intro">Every child communicates differently. We begin by understanding the concern, then shape therapy around communication needs, family priorities and meaningful everyday goals.</p>
         </div>
 
         <div class="services-grid">
-          <article class="service-card reveal">
-            <div class="service-icon icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h7A2.5 2.5 0 0 1 16 6.5v4a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V13A2.5 2.5 0 0 1 4 10.5Z"/><path d="M18 8h.5A1.5 1.5 0 0 1 20 9.5V14a2 2 0 0 1-2 2h-1v3l-4-3h-1"/></svg></div>
-            <span class="service-no">01</span><h3>Speech &amp; Language Delay</h3><p>Support for vocabulary, understanding, sentence development and expressive communication.</p><a href="#booking">Learn more <span>→</span></a>
-          </article>
-          <article class="service-card reveal delay-1">
-            <div class="service-icon icon-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 5a5 5 0 0 0-5 5v2.5A4.5 4.5 0 0 0 12.5 17H14"/><path d="M12 3a7 7 0 0 1 7 7c0 3-1.5 4-3 5.5-1 1-1 2.5-2.5 3.5"/><path d="M7 4.5A8 8 0 0 0 4 11"/></svg></div>
-            <span class="service-no">02</span><h3>Hearing Impairment</h3><p>Communication-focused support for speech and language needs associated with hearing loss.</p><a href="#booking">Learn more <span>→</span></a>
-          </article>
-          <article class="service-card reveal delay-2">
-            <div class="service-icon icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="2.5"/><circle cx="16" cy="8" r="2.5"/><path d="M4 19c.5-3 2-5 4-5s3.5 2 4 5"/><path d="M12 19c.5-3 2-5 4-5s3.5 2 4 5"/></svg></div>
-            <span class="service-no">03</span><h3>Autism Spectrum Disorder</h3><p>Individualized support for functional communication, interaction and social communication goals.</p><a href="#booking">Learn more <span>→</span></a>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-icon icon-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="5"/><path d="m8.5 8.5 7 7M15.5 8.5l-7 7"/></svg></div>
-            <span class="service-no">04</span><h3>ADHD</h3><p>Strategies supporting attention, listening, language organization and social participation.</p><a href="#booking">Learn more <span>→</span></a>
-          </article>
-          <article class="service-card reveal delay-1">
-            <div class="service-icon icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h3l2-5 4 10 2-5h5"/><path d="M4 5v14M20 5v14"/></svg></div>
-            <span class="service-no">05</span><h3>Articulation &amp; Phonology</h3><p>Targeted work on speech sound production, clarity and phonological patterns.</p><a href="#booking">Learn more <span>→</span></a>
-          </article>
-          <article class="service-card reveal delay-2">
-            <div class="service-icon icon-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3"/><path d="M4 13c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3"/><path d="M4 18c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3"/></svg></div>
-            <span class="service-no">06</span><h3>Stuttering &amp; Fluency</h3><p>Support for easier, more confident communication and individualized fluency goals.</p><a href="#booking">Learn more <span>→</span></a>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-icon icon-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 8v8M15 6v12M5 10v4M19 9v6"/><path d="M3 4v16M21 4v16"/></svg></div>
-            <span class="service-no">07</span><h3>Voice Disorders</h3><p>Assessment-led support for vocal quality, healthy voice habits and functional voice use.</p><a href="#booking">Learn more <span>→</span></a>
-          </article>
-          <article class="service-card reveal delay-1">
-            <div class="service-icon icon-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 4h6a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3h-2l-4 3v-3H9a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"/><path d="M9 9h6M9 12h4"/></svg></div>
-            <span class="service-no">08</span><h3>Aphasia</h3><p>Rehabilitation supporting speaking, understanding, reading and writing after language loss.</p><a href="#booking">Learn more <span>→</span></a>
-          </article>
+          <article class="service-card reveal"><div class="service-icon"><svg class="icon"><use href="#i-message"/></svg></div><span class="service-no">01</span><h3>Speech &amp; Language Delay</h3><p>Building words, sentences and everyday communication.</p></article>
+          <article class="service-card reveal delay-1"><div class="service-icon"><svg class="icon"><use href="#i-message"/></svg></div><span class="service-no">02</span><h3>Autism</h3><p>Supporting functional and social communication.</p></article>
+          <article class="service-card reveal delay-2"><div class="service-icon"><svg class="icon"><use href="#i-message"/></svg></div><span class="service-no">03</span><h3>ADHD</h3><p>Helping with listening, communication and interaction.</p></article>
+          <article class="service-card reveal"><div class="service-icon"><svg class="icon"><use href="#i-message"/></svg></div><span class="service-no">04</span><h3>Articulation &amp; Phonology</h3><p>Helping children speak more clearly.</p></article>
+          <article class="service-card reveal delay-1"><div class="service-icon"><svg class="icon"><use href="#i-message"/></svg></div><span class="service-no">05</span><h3>Stuttering</h3><p>Supporting easier, more confident and fluent communication.</p></article>
+          <article class="service-card reveal delay-2"><div class="service-icon"><svg class="icon"><use href="#i-message"/></svg></div><span class="service-no">06</span><h3>Hearing Impairment</h3><p>Building speech, language and communication skills.</p></article>
+          <article class="service-card reveal"><div class="service-icon"><svg class="icon"><use href="#i-message"/></svg></div><span class="service-no">07</span><h3>Voice Disorders</h3><p>Supporting a healthier, clearer voice.</p></article>
+          <article class="service-card reveal delay-1"><div class="service-icon"><svg class="icon"><use href="#i-message"/></svg></div><span class="service-no">08</span><h3>Aphasia</h3><p>Helping rebuild communication after language loss.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="section approach-section" id="approach">
+    <section class="section approach" id="approach">
       <div class="shell approach-grid">
-        <div class="approach-visual reveal">
-          <div class="visual-panel">
-            <div class="visual-dot-grid" aria-hidden="true"></div>
-            <div class="quote-mark">“</div>
-            <blockquote>Communication is more than words—it is connection, confidence and participation in everyday life.</blockquote>
-            <div class="visual-badge"><span>AWAAZ</span><small>THERAPY CENTRE</small></div>
-          </div>
+        <div class="approach-quote reveal">
+          <div class="quote-mark">“</div>
+          <blockquote>Communication is more than words—it is connection, confidence and participation in everyday life.</blockquote>
+          <small>Awaaz Therapy Centre</small>
         </div>
-        <div class="approach-content reveal delay-1">
+        <div class="reveal delay-1">
           <p class="eyebrow">Our approach</p>
           <h2>A clear path from concern to confident communication.</h2>
-          <p>We combine structured assessment, individualized goals and family involvement so therapy feels focused, supportive and practical.</p>
-
+          <p class="approach-copy">We combine thoughtful assessment, individualized goals and family involvement so therapy stays practical, supportive and connected to daily life.</p>
           <div class="steps">
-            <div class="step"><span>01</span><div><h3>Listen &amp; assess</h3><p>We begin by understanding your concerns and evaluating speech, language and communication skills.</p></div></div>
-            <div class="step"><span>02</span><div><h3>Build the plan</h3><p>We create personalized goals and recommend a therapy schedule based on individual needs.</p></div></div>
-            <div class="step"><span>03</span><div><h3>Practice &amp; progress</h3><p>Therapy is paired with practical home strategies so progress continues beyond the clinic.</p></div></div>
-          </div>
-
-          <div class="approach-cta">
-            <a class="text-cta" href="#booking">Start with an assessment <span>↗</span></a>
-            <span class="microcopy">Typical sessions: 30–45 minutes · Usually 2–3× weekly</span>
+            <div class="step"><span class="step-num">01</span><div><h3>Listen &amp; assess</h3><p>We begin by understanding your concerns and evaluating relevant speech, language and communication skills.</p></div></div>
+            <div class="step"><span class="step-num">02</span><div><h3>Build the plan</h3><p>Goals are shaped around the child’s needs, strengths and everyday communication priorities.</p></div></div>
+            <div class="step"><span class="step-num">03</span><div><h3>Practice &amp; progress</h3><p>Therapy is paired with practical guidance so communication skills can be supported beyond the clinic.</p></div></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="age-band">
-      <div class="shell age-band-inner reveal">
-        <div class="age-copy"><p class="eyebrow light">Who we support</p><h2>Care across different ages.</h2></div>
-        <div class="age-tabs" aria-label="Age groups we support">
-          <div class="age-tab"><span class="age-num">18m</span><div><strong>Early years</strong><small>18 months+</small></div></div>
-          <div class="age-tab"><span class="age-num">2–12</span><div><strong>Children</strong><small>Specialized pediatric care</small></div></div>
-          <div class="age-tab"><span class="age-num">13+</span><div><strong>Teens</strong><small>Communication support</small></div></div>
-          <div class="age-tab"><span class="age-num">A</span><div><strong>Adults</strong><small>Speech rehabilitation</small></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section team-section" id="team">
+    <section class="section team" id="team">
       <div class="shell">
-        <div class="section-head team-head reveal">
-          <div><p class="eyebrow">Your clinical team</p><h2>Professional care with a human touch.</h2></div>
-          <p class="section-intro">Qualified speech and language professionals focused on supportive, evidence-informed care and meaningful progress.</p>
+        <div class="section-head reveal">
+          <div><p class="eyebrow">Your clinical team</p><h2 class="section-title">Professional care with a human touch.</h2></div>
+          <p class="section-intro">Meet the speech and language professionals supporting families at Awaaz Therapy Centre. Both profiles use the same layout and image proportions for a cleaner, more credible presentation.</p>
         </div>
 
         <div class="team-grid">
-          <article class="profile-card profile-featured reveal">
-            <div class="profile-image-wrap">
-              <img src="assets/fatima-shah.jpeg" alt="Fatima Shah" />
-              <span class="profile-chip">Certified</span>
+          <article class="team-card reveal">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="assets/fatima-shah-professional.png" alt="Fatima Shah, Speech and Language Pathologist">
+              <span class="team-role-badge">Speech &amp; Language Pathologist</span>
             </div>
-            <div class="profile-body">
-              <span class="profile-kicker">Speech &amp; Language Pathologist</span>
+            <div class="team-body">
+              <span class="team-kicker">Clinical team</span>
               <h3>Fatima Shah</h3>
-              <p>Providing individualized assessment and therapy for speech, language and communication needs across different ages.</p>
-              <div class="profile-meta"><span>Assessment-led care</span><span>Family guidance</span></div>
+              <p>Providing individualized assessment and therapy with a supportive, family-centered approach to speech, language and communication needs.</p>
+              <div class="expertise"><span class="expertise-label">Expertise</span><div class="expertise-tags"><span>Speech &amp; language assessment</span><span>Language development</span><span>Parent guidance</span><span>Individualized care</span></div></div>
             </div>
           </article>
 
-          <article class="profile-card profile-secondary reveal delay-1">
-            <div class="secondary-visual">
-              <div class="initial-orb">SA</div>
-              <div class="mini-wave"><i></i><i></i><i></i><i></i><i></i></div>
+          <article class="team-card reveal delay-1">
+            <div class="team-photo-wrap">
+              <img class="team-photo" src="assets/shumail-asif-professional.png" alt="Shumail Asif, Speech and Language Therapist">
+              <span class="team-role-badge">Speech &amp; Language Therapist</span>
             </div>
-            <div class="profile-body">
-              <span class="profile-kicker">Speech &amp; Language Therapist</span>
+            <div class="team-body">
+              <span class="team-kicker">Clinical team</span>
               <h3>Shumail Asif</h3>
-              <p>Supporting clients and families with focused communication goals and practical therapy strategies.</p>
-              <div class="profile-meta"><span>Individualized goals</span><span>Supportive sessions</span></div>
+              <p>Supporting children and families with focused communication goals, individualized therapy and practical strategies for everyday progress.</p>
+              <div class="expertise"><span class="expertise-label">Expertise</span><div class="expertise-tags"><span>Individual therapy</span><span>Functional communication</span><span>Goal-based support</span><span>Home strategies</span></div></div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section faq-section" id="faq">
+    <section class="section faq" id="faq">
       <div class="shell faq-grid">
-        <aside class="faq-intro reveal">
+        <aside class="faq-side reveal">
           <p class="eyebrow">Frequently asked</p>
-          <h2>Answers before your first visit.</h2>
-          <p>Still unsure whether therapy is right for you or your child? Start with an assessment and we will guide the next step.</p>
-          <a class="btn btn-primary" href="tel:+923251979659">Call the centre <span>→</span></a>
-          <div class="faq-mini-card"><span>Need a quick answer?</span><a href="mailto:awaaztherapycentre@gmail.com">awaaztherapycentre@gmail.com</a></div>
+          <h2 class="faq-title">Answers before your first visit.</h2>
+          <p>If you are unsure whether your child may benefit from speech and language therapy, an initial assessment can help clarify the next step.</p>
+          <a class="btn btn-primary" href="https://www.instagram.com/awaaztherapycentre/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-instagram"/></svg> Book on Instagram</a>
         </aside>
 
         <div class="faq-list reveal delay-1">
-          <details open><summary>What services does Awaaz Therapy Centre offer?<span></span></summary><p>We provide therapy for Speech and Language Delay, Hearing Impairment, Autism Spectrum Disorder (ASD), ADHD, Articulation &amp; Phonological Disorders, Stuttering &amp; Fluency Disorders, Voice Disorders and Aphasia for children, teens and adults.</p></details>
-          <details><summary>At what age should I be concerned about my child’s speech?<span></span></summary><p>If your child is not saying single words by around 18 months or not combining two words by around age 2, it is a good time to seek an assessment. Early intervention can help identify needs sooner.</p></details>
-          <details><summary>How do I know if my child needs speech therapy?<span></span></summary><p>Common signs can include limited talking or vocabulary, unclear speech, difficulty following instructions, stuttering, or difficulty with social communication. A full assessment can help guide you.</p></details>
-          <details><summary>What happens during the first session / assessment?<span></span></summary><p>We discuss your concerns, observe communication and assess relevant speech and language skills. We then create a personalized therapy plan and recommend next steps.</p></details>
-          <details><summary>How long does therapy take to show results?<span></span></summary><p>Every person is different. Progress depends on age, diagnosis, goals, consistency and home practice. Some families begin noticing changes within 8–12 weeks of regular sessions, while others need more time.</p></details>
-          <details><summary>How often are therapy sessions?<span></span></summary><p>Typically 2–3 sessions per week, each around 30–45 minutes. The recommended schedule is discussed after the initial assessment.</p></details>
-          <details><summary>Can parents be involved in therapy?<span></span></summary><p>Yes. We guide parents with home exercises and communication strategies so practice can continue naturally outside therapy sessions.</p></details>
-          <details><summary>Where is Awaaz Therapy Centre located?<span></span></summary><p>Johar Child &amp; Polyclinic, 200 C, BOR Housing Society, Johar Town, Lahore.</p></details>
-          <details><summary>How can I book an appointment?<span></span></summary><p>Call +92 325 1979659 or email awaaztherapycentre@gmail.com. We recommend starting with an assessment.</p></details>
-          <details><summary>Do you see adults as well?<span></span></summary><p>Yes. We support teens and adults with needs including stuttering, articulation, voice, aphasia and speech rehabilitation related to hearing loss.</p></details>
-          <details><summary>Who will be treating my child?<span></span></summary><p>Your child will be treated by qualified speech-language professionals at Awaaz Therapy Centre using individualized and supportive approaches.</p></details>
-          <details><summary>Do you work with children with Autism and ADHD?<span></span></summary><p>Yes. We provide specialized communication support for children with Autism Spectrum Disorder and ADHD, including goals related to attention, social communication and functional participation.</p></details>
+          <details open><summary>What services does Awaaz Therapy Centre offer?</summary><p>We support speech and language delay, autism-related communication needs, ADHD-related communication and interaction, articulation and phonology, stuttering, hearing impairment, voice disorders and aphasia.</p></details>
+          <details><summary>At what age should I be concerned about my child’s speech?</summary><p>If you have concerns about your child’s communication development, an assessment can help identify strengths, needs and appropriate next steps. Development varies between children, so concerns are best considered in the context of the whole child.</p></details>
+          <details><summary>How do I know if my child may need speech therapy?</summary><p>Signs can include difficulty expressing needs, limited vocabulary, unclear speech, difficulty understanding instructions, stuttering, or challenges with social communication. An assessment can help clarify whether therapy is appropriate.</p></details>
+          <details><summary>What happens during the first assessment?</summary><p>We discuss your concerns, observe communication and assess relevant speech and language skills. Findings are then used to guide goals and recommendations.</p></details>
+          <details><summary>Can parents be involved in therapy?</summary><p>Yes. Parent guidance can help communication strategies become part of everyday routines at home.</p></details>
+          <details><summary>Do you work with children with Autism and ADHD?</summary><p>Yes. Support can include functional communication, listening, interaction and social communication goals based on the child’s individual needs.</p></details>
+          <details><summary>Where is Awaaz Therapy Centre located?</summary><p>Johar Child &amp; Polyclinic, 200 C, BOR Housing Society, Johar Town, Lahore.</p></details>
+          <details><summary>How can I book an assessment?</summary><p>Use the Book an Assessment button to open our active Instagram page, where you can message Awaaz Therapy Centre directly. You can also contact us by WhatsApp or phone.</p></details>
         </div>
       </div>
     </section>
 
-    <section class="booking-section" id="booking">
-      <div class="booking-glow glow-left" aria-hidden="true"></div>
-      <div class="booking-glow glow-right" aria-hidden="true"></div>
-      <div class="shell booking-grid">
-        <div class="booking-copy reveal">
-          <span class="booking-badge">Start your speech journey</span>
-          <h2>Book an initial assessment.</h2>
-          <p>Tell us a little about your concern and we will help you take the next step.</p>
-          <div class="contact-stack">
-            <a href="tel:+923251979659" class="contact-line"><span class="contact-symbol">☎</span><div><small>Call</small><strong>+92 325 1979659</strong></div></a>
-            <a href="mailto:awaaztherapycentre@gmail.com" class="contact-line"><span class="contact-symbol">✉</span><div><small>Email</small><strong>awaaztherapycentre@gmail.com</strong></div></a>
-            <a href="https://maps.app.goo.gl/JqrwriS2hGfwh4VQ9?g_st=ipc" target="_blank" rel="noopener" class="contact-line"><span class="contact-symbol">⌖</span><div><small>Visit</small><strong>200 C, BOR Housing Society, Johar Town, Lahore</strong></div></a>
+    <section class="booking" id="booking">
+      <div class="shell">
+        <div class="booking-panel reveal">
+          <div>
+            <span class="booking-badge"><svg class="icon"><use href="#i-instagram"/></svg> Booking via Instagram</span>
+            <h2>Ready to book an assessment?</h2>
+            <p>Message Awaaz Therapy Centre on Instagram to request an assessment. For a quick question, you can also reach the centre directly on WhatsApp.</p>
+            <div class="booking-actions">
+              <a class="btn instagram-btn" href="https://www.instagram.com/awaaztherapycentre/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-instagram"/></svg> Open Instagram</a>
+              <a class="btn btn-secondary" href="https://wa.me/923251979659" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg> WhatsApp Us</a>
+            </div>
+          </div>
+
+          <div class="contact-list">
+            <a class="contact-card" href="tel:+923251979659"><span class="contact-icon"><svg class="icon"><use href="#i-phone"/></svg></span><span><small>Phone</small><strong>+92 325 1979659</strong></span></a>
+            <a class="contact-card" href="mailto:awaaztherapycentre@gmail.com"><span class="contact-icon"><svg class="icon"><use href="#i-mail"/></svg></span><span><small>Email</small><strong>awaaztherapycentre@gmail.com</strong></span></a>
+            <a class="contact-card" href="https://www.instagram.com/awaaztherapycentre/" target="_blank" rel="noopener"><span class="contact-icon"><svg class="icon"><use href="#i-instagram"/></svg></span><span><small>Instagram</small><strong>@awaaztherapycentre</strong></span></a>
+            <a class="contact-card" href="https://maps.app.goo.gl/JqrwriS2hGfwh4VQ9?g_st=ipc" target="_blank" rel="noopener"><span class="contact-icon"><svg class="icon"><use href="#i-map"/></svg></span><span><small>Clinic</small><strong>Johar Child &amp; Polyclinic, 200 C, BOR Housing Society, Johar Town, Lahore</strong></span></a>
           </div>
         </div>
-
-        <form class="booking-form reveal delay-1" id="assessment-form">
-          <div class="form-head"><span>Assessment request</span><small>Opens your email app when submitted</small></div>
-          <div class="field-grid">
-            <label><span>Your name</span><input type="text" name="name" placeholder="Enter your name" required /></label>
-            <label><span>Phone number</span><input type="tel" name="phone" placeholder="e.g. +92 3XX XXXXXXX" required /></label>
-          </div>
-          <label><span>Who is therapy for?</span><select name="ageGroup" required><option value="" selected disabled>Select age group</option><option>Child (18 months–5 years)</option><option>Child (6–12 years)</option><option>Teen</option><option>Adult</option></select></label>
-          <label><span>Main concern</span><select name="concern" required><option value="" selected disabled>Select a concern</option><option>Speech & Language Delay</option><option>Hearing Impairment</option><option>Autism Spectrum Disorder</option><option>ADHD</option><option>Articulation / Phonology</option><option>Stuttering / Fluency</option><option>Voice Disorder</option><option>Aphasia</option><option>Not sure yet</option></select></label>
-          <label><span>Anything you would like us to know?</span><textarea name="message" rows="4" placeholder="Briefly describe your concern"></textarea></label>
-          <button class="form-submit" type="submit">Send assessment request <span>↗</span></button>
-          <p class="form-note">For urgent scheduling, call us directly at <a href="tel:+923251979659">+92 325 1979659</a>.</p>
-        </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="shell footer-top">
-      <div class="footer-brand"><img src="assets/awaaz-logo.png" alt="Awaaz Therapy Centre" /><p>Your speech journey starts here.</p></div>
-      <div class="footer-column"><h4>Explore</h4><a href="#services">Services</a><a href="#approach">Our approach</a><a href="#team">Team</a><a href="#faq">FAQs</a></div>
-      <div class="footer-column"><h4>Connect</h4><a href="https://www.instagram.com/awaaztherapycentre?stkn=MW1tNXZ6bmtjbnNpNA==" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/profile.php?id=61594171565545" target="_blank" rel="noopener">Facebook ↗</a><a href="mailto:awaaztherapycentre@gmail.com">Email</a></div>
-      <div class="footer-column footer-location"><h4>Visit</h4><p>Johar Child &amp; Polyclinic<br>200 C, BOR Housing Society<br>Johar Town, Lahore</p><a href="https://maps.app.goo.gl/JqrwriS2hGfwh4VQ9?g_st=ipc" target="_blank" rel="noopener">Open in Maps ↗</a></div>
+    <div class="shell footer-grid">
+      <div class="footer-brand"><img class="footer-logo" src="assets/awaaz-logo.png" alt="Awaaz Therapy Centre"><p>Your speech journey starts here.</p></div>
+      <div><h4>Explore</h4><div class="footer-links"><a href="#services">How we can help</a><a href="#approach">Our approach</a><a href="#team">Team</a><a href="#faq">FAQs</a></div></div>
+      <div><h4>Connect</h4><div class="footer-links"><a href="https://www.instagram.com/awaaztherapycentre/" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/923251979659" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:awaaztherapycentre@gmail.com">Email</a></div><div class="social-links"><a class="social-link" aria-label="Instagram" href="https://www.instagram.com/awaaztherapycentre/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-instagram"/></svg></a><a class="social-link" aria-label="WhatsApp" href="https://wa.me/923251979659" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg></a></div></div>
+      <div class="footer-location"><h4>Visit</h4><address>Johar Child &amp; Polyclinic<br>200 C, BOR Housing Society<br>Johar Town, Lahore</address><div class="footer-links" style="margin-top:9px"><a href="https://maps.app.goo.gl/JqrwriS2hGfwh4VQ9?g_st=ipc" target="_blank" rel="noopener">Open in Google Maps</a></div></div>
     </div>
-    <div class="shell footer-bottom"><span>© <span id="year"></span> Awaaz Therapy Centre</span><span>Open daily · 9:00 AM – 10:00 PM</span></div>
+    <div class="shell footer-bottom"><span>© <span id="year"></span> Awaaz Therapy Centre</span><span>Open Mon–Sat · 9:00 AM–10:00 PM</span></div>
   </footer>
 
   <div class="floating-actions" aria-label="Quick contact actions">
-    <a href="tel:+923251979659" aria-label="Call Awaaz Therapy Centre">☎</a>
-    <a href="mailto:awaaztherapycentre@gmail.com" aria-label="Email Awaaz Therapy Centre">✉</a>
-    <a class="floating-map" href="https://maps.app.goo.gl/JqrwriS2hGfwh4VQ9?g_st=ipc" target="_blank" rel="noopener" aria-label="Open Awaaz Therapy Centre in Google Maps">⌖</a>
+    <a class="ig" aria-label="Book on Instagram" href="https://www.instagram.com/awaaztherapycentre/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-instagram"/></svg></a>
+    <a class="wa" aria-label="WhatsApp Awaaz Therapy Centre" href="https://wa.me/923251979659" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg></a>
+    <a aria-label="Call Awaaz Therapy Centre" href="tel:+923251979659"><svg class="icon"><use href="#i-phone"/></svg></a>
   </div>
+
+  <script>
+    (() => {
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav');
+
+      toggle?.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+      });
+
+      nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        toggle?.setAttribute('aria-expanded', 'false');
+      }));
+
+      const items = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        items.forEach(item => observer.observe(item));
+      } else {
+        items.forEach(item => item.classList.add('visible'));
+      }
+
+      document.querySelectorAll('.faq-list details').forEach(detail => {
+        detail.addEventListener('toggle', () => {
+          if (!detail.open) return;
+          document.querySelectorAll('.faq-list details').forEach(other => {
+            if (other !== detail) other.open = false;
+          });
+        });
+      });
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
